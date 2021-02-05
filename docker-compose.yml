@@ -30,7 +30,7 @@
 # For more extensive installation and update instructions, refer to the
 # documentation.
 
-version: "3.4"
+version: "2"
 services:
   broker:
     image: redis:6.0
