@@ -56,11 +56,11 @@ services:
       - tika
     ports:
       - 8010:8000
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000"]
-      interval: 30s
-      timeout: 10s
-      retries: 5
+#    healthcheck:
+#      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+#      interval: 30s
+#      timeout: 10s
+#      retries: 5
     volumes:
       - paperless_data:/usr/src/paperless/data
       - paperless_media:/usr/src/paperless/media
