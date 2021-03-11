@@ -85,6 +85,15 @@ services:
     restart: unless-stopped
 
 volumes:
-  data:
-  media:
-  pgdata:
+    paperless_data:
+        external: true
+    paperless_consume:
+        external: true
+    paperless_media:
+        external: true
+    paperless_export:
+        external: true
+    paperlessng_pgdata:
+        external: true
+    pgdata:
+        external: true
